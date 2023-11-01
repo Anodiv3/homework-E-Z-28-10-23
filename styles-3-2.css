@@ -1,0 +1,36 @@
+.container-header-div {
+    display: grid;
+    grid-template-columns: 36.3%;
+    grid-template-rows: 50px;
+}
+.daughter-container-header-div {
+    background-color: rgb(44, 23, 94);
+    border: 3px solid black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 40px 50px 30vw 0px;
+    grid-template-rows: 20px 200px 35px;
+}
+
+.one {
+    background-color: blueviolet;
+    border: 2px solid gray;
+    grid-column: 1 / span 4;
+}
+
+.two {
+    background-color: rgba(109, 255, 165, 0.479);
+    border: 3px solid blanchedalmond;
+    grid-column: 1 / span 2;
+}
+.three {
+    background-color: rgb(222, 206, 240);
+    border: 3px solid cornflowerblue;
+}
+.four {
+    background-color: rgb(95, 60, 128);
+    border: 3px solid fuchsia;
+    grid-column: 1 / span 4;
+}

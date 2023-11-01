@@ -1,0 +1,91 @@
+body {
+    background-color: antiquewhite;
+}
+
+.containerGrid {
+    display: grid;
+    grid-template-columns: 50px 600px;
+    grid-template-rows: 50px 100px 55px 55px 55px 50px 50px;
+    grid-template-areas: 
+    'aside header'
+    'aside header'
+    'aside main'
+    'aside main'
+    'aside main'
+    'aside main'
+    'aside footer'
+    'aside footer';
+    border: 2px solid darkolivegreen;
+    gap: 2px;
+}
+
+.containerGridHeader {
+    grid-area: header;
+}
+.containerGridAside {
+    grid-area: aside;
+    background-color: rgb(203, 226, 240);
+}
+.containerGridMain {
+    grid-area: main;
+    background-color: rgb(203, 203, 236);
+}
+.containerGridFooter {
+    grid-area: footer;
+    grid-row: 8/8;
+    background-color: rgba(140, 147, 252, 0.377);
+}
+.flexitem1 {
+    display: flex;
+    justify-content: space-between;
+}
+.flexitem2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.flexitem3 {
+    display: flex;
+}
+.buttonradiogrid {
+    display: grid;
+    grid-row: 6/6;
+}
+.buttonradioImgDiv {
+    display: flex;
+    border: 2px solid black;
+}
+
+.containerGridOneTwhoThree {
+    display: flex;
+    flex-wrap: wrap;
+}
+.containerGridOneTwhoThree > p {
+    flex: 1 1 500px;
+}
+
+.one1 {
+    border: 2px solid black;
+    order: 1;
+    align-self: flex-end;
+}
+.two2 {
+    border: 2px solid black;
+    order: 2;
+}
+.three3 {
+    border: 2px solid black;
+    order: 3;
+}
+
+.circle-image{
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+  }
+  .circle-image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+  }
